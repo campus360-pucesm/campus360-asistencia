@@ -33,5 +33,5 @@ uvicorn app.main:app --reload
 
 ## 👥 Integrantes del Equipo
 * Dev Principal:
-* Product Owner del módulo:
+* Product Owner del módulo: John Steven Lopez Velez
 * Scrum Master asignado:
