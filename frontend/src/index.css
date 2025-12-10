@@ -1,0 +1,206 @@
+/* ================================================
+   🎨 PALETA DE COLORES MODERNA (Light Mode)
+   ================================================ */
+:root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --secondary: #64748b;
+    --text: #1e293b;
+    --text-light: #475569;
+    --border: #e2e8f0;
+    --danger: #ef4444;
+    --success: #10b981;
+    --radius: 12px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.05);
+    --shadow-hover: 0 4px 14px rgba(0,0,0,0.08);
+    --transition: 0.25s ease;
+}
+
+/* ================================================
+   🧱 RESETEO GENERAL
+   ================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+}
+
+/* ================================================
+   🧱 DASHBOARD GENERAL
+   ================================================ */
+.dashboard-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--surface);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 28px;
+}
+
+/* ================================================
+   🧱 TABS
+   ================================================ */
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0;
+}
+
+.tab-button {
+    padding: 12px 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-light);
+    border-radius: var(--radius) var(--radius) 0 0;
+    transition: var(--transition);
+}
+
+.tab-button:hover {
+    color: var(--primary);
+    background: rgba(79, 70, 229, 0.05);
+}
+
+.tab-button.active {
+    background: var(--surface);
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary); /* Visual trick mostly */
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.tab-content {
+    background: var(--surface);
+    border-radius: 0 var(--radius) var(--radius) var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    min-height: 400px;
+}
+
+/* ================================================
+   🧱 REPORTES Y TABLAS
+   ================================================ */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.stat-label {
+    font-size: 13px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.filter-select {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    min-width: 200px;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.reports-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.reports-table th {
+    text-align: left;
+    padding: 12px;
+    background: #f1f5f9;
+    color: var(--text-light);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.reports-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    font-size: 14px;
+}
+
+.reports-table tr:hover {
+    background: #f8fafc;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-blue { background: #e0e7ff; color: #4338ca; }
+.badge-green { background: #dcfce7; color: #166534; }
+.badge-gray { background: #f1f5f9; color: #475569; }
