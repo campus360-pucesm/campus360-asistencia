@@ -19,7 +19,7 @@ campus360-att-main/
 │   │   ├── components/         # Componentes (Reports, etc.)
 │   │   ├── services/           # Conexión con API (Axios)
 │   │   ├── App.jsx             # Layout principal
-│   │   └── index.css           # Estilos globales y tema oscuro
+│   │   └── index.css           # Estilos globales y tema light
 │   ├── package.json            # Dependencias Javascript
 │   └── vite.config.js          # Configuración Vite
 │
@@ -86,14 +86,14 @@ La configuración de conexión con el backend está en `frontend/src/services/ap
 
 ### 1. Panel de Reportes
 - Visualización de tabla con todos los registros de asistencia.
-- Datos mostrados: ID de usuario, Ubicación, Fecha y Hora.
+- Datos mostrados: **Nombre del Estudiante**, Ubicación, Fecha y Hora.
 - Contador total de registros.
-- Diseño "Dark Mode" moderno y responsivo.
+- Diseño **"Light Mode"** limpio y responsivo (coherente con el módulo de Auth).
 
 ### 2. Simulación de Escaneo (Test Mode)
 - Botón **"+ Simulate Scan"** en la interfaz para pruebas rápidas.
-- Genera un `user_id` aleatorio y selecciona una ubicación al azar (LAB-101, BIBLIOTECA, etc.).
-- Envía la petición al backend inmediatamente para verificar la integración completa (Frontend -> Backend -> Base de Datos).
+- Utiliza el **ID de un estudiante existente** (simulado) para registrar una asistencia real válida.
+- Selecciona una ubicación al azar (LAB-101, BIBLIOTECA, etc.) y envía la petición al backend inmediatamente.
 
 ## 🛠️ Tecnologías
 

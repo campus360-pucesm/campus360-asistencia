@@ -67,14 +67,19 @@ exports.getReports = async (req, res) => {
     try {
         // Fetch logs with optional filtering (e.g., by user or date)
         // For now, get recent 100 logs
-        // Fetch logs with optional filtering (e.g., by user or date)
         // Join with 'users' table to get full_name
+        // Join with 'locations' table to get class schedule (now enabled by DB FK)
         const { data, error } = await supabase
             .from('access_logs')
             .select(`
                 *,
                 users (
                     full_name
+                ),
+                locations (
+                    class_start,
+                    class_end,
+                    grace_period
                 )
             `)
             .order('timestamp', { ascending: false })
