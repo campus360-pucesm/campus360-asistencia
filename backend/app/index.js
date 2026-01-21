@@ -11,6 +11,12 @@ const port = 8004;
 app.use(cors());
 app.use(express.json());
 
+// Swagger
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./swagger');
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
 // Routes
 const attendanceRoutes = require('./routers/attendanceRouter');
 app.use('/api/attendance', attendanceRoutes);
