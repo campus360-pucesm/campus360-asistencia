@@ -3,32 +3,26 @@
 Módulo de Gestión de Asistencia y Reportes para CAMPUS360, desarrollado con Node.js (Backend) y React (Frontend).
 Este módulo permite el registro de asistencia mediante simulación de escaneo de códigos QR y la visualización de reportes de acceso.
 
+> **📖 Documentación de API:** Consulta [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) para detalles de endpoints.
+
 ## 📁 Estructura del Proyecto
 
 ```
 campus360-att-main/
 ├── backend/                    # Backend Node.js + Express
-│   ├── src/                    # Código fuente del servidor
+│   ├── app/                    # Código fuente del servidor
 │   │   ├── controllers/        # Controladores de lógica de negocio
+│   │   ├── routers/            # Definición de rutas
 │   │   └── index.js            # Punto de entrada y rutas
 │   ├── .env                    # Variables de entorno (Supabase, Puerto)
 │   └── package.json            # Dependencias Node (Express, Supabase)
-│
-├── frontend/                   # Frontend React + Vite
-│   ├── src/                    # Código fuente de la UI
-│   │   ├── components/         # Componentes (Reports, etc.)
-│   │   ├── services/           # Conexión con API (Axios)
-│   │   ├── App.jsx             # Layout principal
-│   │   └── index.css           # Estilos globales y tema light
-│   ├── package.json            # Dependencias Javascript
-│   └── vite.config.js          # Configuración Vite
 │
 └── README.md                   # Este archivo
 ```
 
 ## 🚀 Inicio Rápido
 
-### Backend (Puerto 3000)
+### Backend (Puerto 8004)
 
 ```bash
 cd backend
@@ -38,31 +32,23 @@ npm install
 
 # Configurar variables de entorno
 # Copia el archivo .env.example (si existe) o crea un .env con:
-# PORT=3000
+# PORT=8004
 # SUPABASE_URL=tu_url
 # SUPABASE_KEY=tu_key
 
 # Iniciar servidor
-npm start
-```
-
-El backend estará disponible en: **http://localhost:3000**
-- API Scan: `POST /api/attendance/scan`
-- API Reportes: `GET /api/attendance/reports`
-
-### Frontend (Puerto 5173 - por defecto)
-
-```bash
-cd frontend
-
-# Instalar dependencias
-npm install
-
-# Iniciar servidor de desarrollo
 npm run dev
 ```
 
-El frontend estará disponible en: **http://localhost:5173** (o el puerto que indique Vite).
+El backend estará disponible en: **http://localhost:8004**
+- Documentación API: `http://localhost:8004/api-docs`
+- API Scan: `POST /api/attendance/scan`
+- API Reportes: `GET /api/attendance/reports`
+
+### Frontend
+
+El frontend de este módulo se encuentra integrado en el repositorio principal de la aplicación web: **`campus360-web-app`**.
+Por favor, sigue las instrucciones de ese repositorio para iniciar la interfaz de usuario.
 
 ## 🔧 Configuración
 
@@ -71,16 +57,12 @@ El frontend estará disponible en: **http://localhost:5173** (o el puerto que in
 Asegúrate de tener un archivo `backend/.env` con las credenciales de tu proyecto Supabase:
 
 ```env
-PORT=3000
+PORT=8004
 SUPABASE_URL="https://tu-proyecto.supabase.co"
 SUPABASE_KEY="tu-anon-key-publica"
 ```
 
-### Frontend
 
-La configuración de conexión con el backend está en `frontend/src/services/api.js`:
-- Por defecto apunta a `http://localhost:3000/api/attendance`
-- Si despliegas el backend en otro lugar, actualiza esta constante.
 
 ## 📝 Funcionalidades Clave
 
@@ -115,11 +97,9 @@ La configuración de conexión con el backend está en `frontend/src/services/ap
 ### Backend
 1. Ejecutar `npm install`.
 2. Configurar variables de entorno de producción.
-3. Usar `node src/index.js` o un gestor de procesos como PM2.
+3. Usar `node app/index.js` o un gestor de procesos como PM2.
 
-### Frontend
-1. Ejecutar `npm run build` para generar la carpeta `dist`.
-2. Servir los archivos estáticos generados.
+
 
 ## 👥 Equipo
 Dev Principal: René Yasser Herrera Zambrano
