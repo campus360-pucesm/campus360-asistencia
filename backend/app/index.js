@@ -12,8 +12,8 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.post('/api/attendance/scan', attendanceController.scanQR);
-app.get('/api/attendance/reports', attendanceController.getReports);
+const attendanceRoutes = require('./routers/attendanceRouter');
+app.use('/api/attendance', attendanceRoutes);
 
 app.get('/', (req, res) => {
   res.send('Attendance Module API is running');
