@@ -1,0 +1,18 @@
+# FastAPI Core
+fastapi
+uvicorn[standard]
+
+# Pydantic & Settings
+pydantic[email]
+pydantic-settings
+
+# Database & ORM
+prisma
+
+# Authentication (for potential future use, though mainly handled by Auth module)
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+
+# Environment
+python-dotenv

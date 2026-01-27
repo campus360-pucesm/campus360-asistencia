@@ -5,3 +5,14 @@ __pycache__/
 venv/
 .vscode/
 .idea/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+
+# Prisma
+/prisma_att_gen/

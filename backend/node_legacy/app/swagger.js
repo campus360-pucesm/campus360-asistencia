@@ -6,7 +6,7 @@ const options = {
         info: {
             title: 'CAMPUS360 - Attendance Module API',
             version: '1.0.0',
-            description: 'API for simulating QR attendance scans and retrieving access reports',
+            description: 'API for retrieving access reports and attendance analytics',
         },
         servers: [
             {
