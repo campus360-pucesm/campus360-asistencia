@@ -109,7 +109,9 @@ DIRECT_URL="postgresql://postgres.[proyecto]:[password]@aws-0-us-west-2.pooler.s
 
 ## 👥 Equipo
 Dev Principal: René Yasser Herrera Zambrano
+
 Product Owner del módulo: John Steven Lopez Velez
+
 Scrum Master asignado: Javier Antonio Artiles Veitia
 
 CAMPUS360 - Módulo de Asistencia
