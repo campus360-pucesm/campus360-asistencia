@@ -48,7 +48,7 @@ uvicorn app.main:app --reload --port 8004
 ```
 
 El backend estará disponible en: **http://localhost:8004**
-- Documentación API: `http://localhost:8004/api-docs`
+
 
 - API Reportes: `GET /api/attendance/reports`
 
