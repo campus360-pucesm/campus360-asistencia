@@ -3,9 +3,9 @@
 Módulo de Gestión de Asistencia y Reportes para CAMPUS360, desarrollado con Node.js (Backend) y React (Frontend).
 Este módulo permite la visualización de reportes de acceso y gestión de datos de asistencia.
 
-> **📖 Documentación de API:** Consulta [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) para detalles de endpoints.
+> **Documentación de API:** Consulta [API_DOCUMENTATION.md](./API_DOCUMENTATION.md) para detalles de endpoints.
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 campus360-att-main/
@@ -22,7 +22,7 @@ campus360-att-main/
 └── README.md                   # Este archivo
 ```
 
-## 🚀 Inicio Rápido
+## Inicio Rápido
 
 ### Backend (Puerto 8004)
 
@@ -57,7 +57,7 @@ El backend estará disponible en: **http://localhost:8004**
 El frontend de este módulo se encuentra integrado en el repositorio principal de la aplicación web: **`campus360-web-app`**.
 Por favor, sigue las instrucciones de ese repositorio para iniciar la interfaz de usuario.
 
-## 🔧 Configuración
+## Configuración
 
 ### Backend (.env)
 
@@ -71,7 +71,7 @@ DIRECT_URL="postgresql://postgres.[proyecto]:[password]@aws-0-us-west-2.pooler.s
 
 
 
-## 📝 Funcionalidades Clave
+## Funcionalidades Clave
 
 ### 1. Panel de Reportes
 - Visualización de tabla con todos los registros de asistencia.
@@ -81,13 +81,13 @@ DIRECT_URL="postgresql://postgres.[proyecto]:[password]@aws-0-us-west-2.pooler.s
 
 
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 **Backend:**
-- 🐍 Python 3.10+
-- ⚡ FastAPI (Framework web de alto rendimiento)
-- 💎 Prisma ORM (Manejo de Base de Datos)
-- 🦄 Uvicorn (Servidor ASGI)
+- Python 3.10+
+- FastAPI (Framework web de alto rendimiento)
+- Prisma ORM (Manejo de Base de Datos)
+- Uvicorn (Servidor ASGI)
 - Pydantic (Validación de datos)
 
 **Frontend:**
@@ -97,7 +97,7 @@ DIRECT_URL="postgresql://postgres.[proyecto]:[password]@aws-0-us-west-2.pooler.s
 - Lucide React (Íconos)
 - Vanilla CSS (Diseño personalizado)
 
-## 📦 Despliegue
+## Despliegue
 
 ### Backend
 1. Ejecutar `pip install -r requirements.txt`.
@@ -107,7 +107,7 @@ DIRECT_URL="postgresql://postgres.[proyecto]:[password]@aws-0-us-west-2.pooler.s
 
 
 
-## 👥 Equipo
+## Equipo
 Dev Principal: René Yasser Herrera Zambrano
 Product Owner del módulo: John Steven Lopez Velez
 Scrum Master asignado: Javier Antonio Artiles Veitia

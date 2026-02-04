@@ -1,6 +1,6 @@
 # CAMPUS360 - Attendance Module API Documentation
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 - [Descripción General](#descripción-general)
 - [URL Base](#url-base)
@@ -17,7 +17,7 @@
 El módulo de asistencia CAMPUS360 es una API RESTful desarrollada en **Python (FastAPI)** que proporciona:
 
 
-- 📊 **Reportes de Acceso** - Consulta de historial de entradas con detalles de usuario y ubicación
+- **Reportes de Acceso** - Consulta de historial de entradas con detalles de usuario y ubicación
 
 ---
 
